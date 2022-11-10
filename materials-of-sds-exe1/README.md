@@ -1,5 +1,4 @@
-# SDS
-Software-Defined Systems
+
 
 ## exercise 1
 ### Hints

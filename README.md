@@ -71,7 +71,7 @@ Software-Defined Systems
      ![INFO in Rahti](materials-of-sds-exe1/RI.png)
 
 
-4.Run the image:
+4. Run the image:
    ```sh
    docker run --env MQTT_URL=mqtt-test.rahtiapp.fi --env MQTT_PORT=443 --env CLIENT_ID=student297 docker-   registry.rahti.csc.fi/xinyuan-ma/toyotafeeder:1.0
    ```

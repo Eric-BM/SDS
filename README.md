@@ -63,16 +63,44 @@ Software-Defined Systems
       # push it to registry
       
    ```
-   Screenshots:
+   Results:
      ![login Rahti and OC](materials-of-sds-exe1/LRO.png)
      ![Tag and Push](materials-of-sds-exe1/P.png)
      
      INFO in Rahti:
      ![INFO in Rahti](materials-of-sds-exe1/RI.png)
+     
+4.Run the image:
+   ```sh
+   docker run --env MQTT_URL=mqtt-test.rahtiapp.fi --env MQTT_PORT=443 --env CLIENT_ID=student297 docker-registry.rahti.csc.fi/xinyuan-ma/toyotafeeder:1.0
+   ```
+   
+5. Use mosquitto_sub:
+   ```sh
+   mosquitto_sub -h mqtt-test.rahtiapp.fi -p 443 -t 'student297/#' -v --cafile ca.crt --insecure -i student297 -d
+   ```
+   
+   Results:
+   ![mosquitto_sub](materials-of-sds-exe1/ms.png)
+   
+7. Execute a command:
+   ```sh
+   docker ps
+   ```
+   
+   Results:
+   ![running container](materials-of-sds-exe1/rc.png)
+   
+   
+   
    
    
 #STINT
    ``` sh
    history 1 > out.txt
    # output history from line1 to the end and save it to out.txt
+   
+   mosquitto_sub -h mqtt-test.rahtiapp.fi -t \# -d -p 443
+   # subscribe all topics
    ```
+   [mosquitto_sub and mosquitto_pub function](http://www.steves-internet-guide.com/mosquitto_pub-sub-clients/)

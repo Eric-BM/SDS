@@ -1,6 +1,6 @@
 
 
-## exercise 1
+## Exercise 1 - Docker Basic
 ### Hints
 1. Check the toyota-data-feeder repository
 2. Create a Dockerfile that executes feeder.py on container startup  

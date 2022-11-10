@@ -10,8 +10,8 @@ Software-Defined Systems
 3. Build the image and push it to the registry
    You can use either DockerHub or CSC Rahti registry, but we recommend the latter.
    If you are using CSC Rahti registry, be sure to assign assistants to your project and to change image pull policy to Anonymous. Check exercise 1 slides for more.
-4. Tag the image with 1.0 tag
-   Run the image with correct MQTT_URL, MQTT_PORT  and CLIENT_ID values
+   Tag the image with 1.0 tag
+4. Run the image with correct MQTT_URL, MQTT_PORT  and CLIENT_ID values
    Don't hardcode these values!
 5. Use mosquitto_sub to confirm you are receiving messages from your Docker container
    Use flags --verbose --insecure and --cafile ca.crt. Get ca.crt and other certificates from exercises page.
@@ -27,6 +27,7 @@ Software-Defined Systems
     
 ### My Text Report
 1. Open [toyota-data-feeder](https://github.com/smaddis/toyota-data-feeder) to download the zip and unzip it ![ToyotFolder](materials-of-sds-exe1/TF.png)
+2. Create a [Dockerfile](materials-of-sds-exe1/Dockerfile)
 3. Build the image:
    ``` Dockerfile
        
@@ -62,7 +63,12 @@ Software-Defined Systems
       # push it to registry
       
    ```
-   
+   Screenshots:
+     ![login Rahti and OC](materials-of-sds-exe1/LRO.png)
+     ![Tag and Push](materials-of-sds-exe1/P.png)
+     
+     INFO in Rahti:
+     ![INFO in Rahti](materials-of-sds-exe1/RI.png)
    
    
 #STINT

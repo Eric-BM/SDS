@@ -31,8 +31,8 @@
 
 
 #### STEPS:
-1. Open [toyota-data-feeder](https://github.com/smaddis/toyota-data-feeder) to download the zip and unzip it ![ToyotFolder](materials-of-sds-exe1/TF.png)
-2. Create a [Dockerfile](materials-of-sds-exe1/Dockerfile)
+1. Open [toyota-data-feeder](https://github.com/smaddis/toyota-data-feeder) to download the zip and unzip it ![ToyotFolder](materials-of-sds-exe1/pic/TF.png)
+2. Create a [Dockerfile](materials-of-sds-exe1/src/Dockerfile)
 3. Build the image:
    ``` Dockerfile
        
@@ -69,11 +69,11 @@
       
    ```
    Results:
-     ![login Rahti and OC](materials-of-sds-exe1/LRO.png)
-     ![Tag and Push](materials-of-sds-exe1/P.png)
+     ![login Rahti and OC](materials-of-sds-exe1/pic/LRO.png)
+     ![Tag and Push](materials-of-sds-exe1/pic/P.png)
      
      INFO in Rahti:
-     ![INFO in Rahti](materials-of-sds-exe1/RI.png)
+     ![INFO in Rahti](materials-of-sds-exe1/pic/RI.png)
 
 
 4. Run the image:
@@ -87,7 +87,7 @@
    ```
    
    Results:
-   ![mosquitto_sub](materials-of-sds-exe1/ms.png)
+   ![mosquitto_sub](materials-of-sds-exe1/pic/ms.png)
    
 6. Execute a command:
    ```sh
@@ -95,7 +95,7 @@
    ```
    
    Results:
-   ![running container](materials-of-sds-exe1/rc.png)
+   ![running container](materials-of-sds-exe1/pic/rc.png)
    
    
    

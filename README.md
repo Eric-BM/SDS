@@ -11,5 +11,7 @@ Software-Defined Systems
    ```
    [mosquitto_sub and mosquitto_pub function](http://www.steves-internet-guide.com/mosquitto_pub-sub-clients/)
    
-   
-   YAML doesn't allow tabs; it requires spaces.
+   ```sh
+   yaml: line 10: found character that cannot start any token
+   #YAML doesn't allow tabs; it requires spaces.
+   ```

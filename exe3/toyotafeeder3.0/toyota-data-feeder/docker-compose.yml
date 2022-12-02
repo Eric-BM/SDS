@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+  feeder:
+    image: docker-registry.rahti.csc.fi/xinyuan-ma/toyotafeeder:2.0
+    environment:
+      - MQTT_URL = mosquitto
+      - MQTT_PORT = 8883
+      - CLIENT_ID = student297
+    networks:
+      - studnet297-net 
+
+  mosquitto:
+    image: eclipse-mosquitto:latest
+    ports:
+     - "1883:1883"
+     - "8883:8883"
+    volumes:
+      - "./mosquitto.conf:/mosquitto/config/mosquitto.conf"
+      - "./certs:/mosquitto/config/certs"
+    networks:
+      - studnet297-net
+
+networks:
+  studnet297-net: 
+    name: studnet297-net
